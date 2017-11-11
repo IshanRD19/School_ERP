@@ -34,8 +34,8 @@ class Rooms_2018(models.Model):
 
 
 class Subjects(models.Model):
-    SubjectCode = models.CharField(primary_key=True, max_length=5)          # 07GEO, 12MAT
-    SubjectName = models.CharField(max_length=20)                           # GEO, MAT
+    SubjectCode = models.CharField(primary_key=True, max_length=5)       # 07GEO, 12MAT
+    SubjectName = models.CharField(max_length=20)                        # GEO, MAT
     TaughtSince = models.DateField(auto_now=True)
     TaughtTill = models.DateField(auto_now=True)
     NoOfTeachers = models.IntegerField(default=0)                        # total in all classes and sections
