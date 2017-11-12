@@ -15,7 +15,7 @@ class Students_2018(models.Model):
     ClassRank = models.IntegerField(default=0)                              # current rank in class
 
 
-class TimeTableLookUp(model.Model):
+class TimeTableLookUp(models.Model):
     TTID = models.CharField(primary_key=True, max_length=3)                 # Numerals 1,2,3,...
     WeekDay = models.CharField(max_length=9)                                # Monday,Tuesday,...
     StartTime = models.TimeField()
