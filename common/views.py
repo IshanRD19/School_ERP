@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from principal.models import login_info, Personal_Info
 # Create your views here.
 
+
 def home(request):
     return render(request, 'index.html', {})
 
