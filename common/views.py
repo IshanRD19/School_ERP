@@ -11,8 +11,13 @@ def home(request):
 def login_attempt(request):
     username = request.POST['username']
     password = request.POST['password']
+    usertype = 1 # 1:student, 2:teacher, 3:principal
     try:
-        login_info.objects.get(username=Personal_Info.objects.get(Index=username), password=password)
-        return HttpResponse('Welcome')
+        user = Personal_Info.objects.get(EMail=username)
+        try:
+            login_info.objects.get(username=user, password=password)
+            return HttpResponse('Welcome')
+        except:
+            return render(request, 'index.html', {'message':'Invalid Password!'})
     except:
-        return render(request, 'index.html', {'message':'Invalid Credentials!'})
+        return render(request, 'index.html', {'message':'Invalid email!'})
