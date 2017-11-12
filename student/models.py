@@ -25,13 +25,13 @@ class TimeTableLookUp(models.Model):
 
 class TimeTable_2018(models.Model):
     TTID = models.ForeignKey(TimeTableLookUp)
-    ClassSection = models.CharField(max_length=3)
+    ClassSection = models.CharField(max_length=3, default='NA')
     SubjectCode = models.ForeignKey(Subjects)
     #TeacherID = models.ForeignKey(Teachers_2018)
 
 
 class Attendance_2018(models.Model):
-    RegistrationNo = models.ForeignKey(Students_2018)
-    TTID = models.ForeignKey(TimeTableLookUp, max_length=12)
-    ClassDate = models.DateField(auto_now=False)         # DD/MM/YYYY
+    RegistrationNo = models.ForeignKey(Students_2018, default='NA')
+    TTID = models.ForeignKey(TimeTableLookUp, max_length=12, default='NA')
+    ClassDate = models.DateField(auto_now=True)         # DD/MM/YYYY
     Attendance = models.CharField(max_length=8)                            # present or absent
