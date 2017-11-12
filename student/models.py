@@ -6,7 +6,7 @@ from principal.models import Personal_Info, Subjects
 
 class Students_2018(models.Model):
     RegistrationNo = models.CharField(primary_key=True, max_length=20, default='NA')
-    Index = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='student').values('FirstName')})
+    Index = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='Student').values('FirstName')})
     ClassSection = models.CharField(max_length=3, default='NA')             # 07B
     RollNo = models.CharField(max_length=3, default='NA')
     From = models.DateField(auto_now=False)                                 # active from date
@@ -37,5 +37,5 @@ class Attendance_2018(models.Model):
 
 
 class Student_login_info(models.Model):
-    username = models.ForeignKey(Personal_Info, limit_choices_to={'EMail__in':Personal_Info.objects.filter(Role='student').values('EMail')})
+    username = models.ForeignKey(Personal_Info, limit_choices_to={'EMail__in':Personal_Info.objects.filter(Role='Student').values('EMail')})
     password = models.CharField(max_length=16)
