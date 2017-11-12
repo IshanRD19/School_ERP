@@ -27,7 +27,6 @@ class TimeTable_2018(models.Model):
     TTID = models.ForeignKey(TimeTableLookUp)
     ClassSection = models.CharField(max_length=3)
     SubjectCode = models.ForeignKey(Subjects)
-    #TeacherID = models.ForeignKey(Teachers_2018)
 
 
 class Attendance_2018(models.Model):
