@@ -6,7 +6,7 @@ class Personal_Info(models.Model):
     Index = models.IntegerField(primary_key=True)
     Role = models.CharField(max_length=20)
     FirstName = models.CharField(max_length=20)
-    MiddleName = models.CharField(max_length=20)
+    MiddleName = models.CharField(max_length=20, null=True, blank=True)
     LastName = models.CharField(max_length=20)
     DOB = models.DateField(auto_now=False)
     Sex = models.CharField(max_length=12)
@@ -17,9 +17,11 @@ class Personal_Info(models.Model):
     AddressLine2 = models.CharField(max_length=50)
     AddressLine3 = models.CharField(max_length=50)
     Pincode = models.CharField(max_length=6)
-    CommuteDistance = models.IntegerField()             # XX.X kms
+    CommuteDistance = models.FloatField()             # XX.X kms
     CommuteTime = models.IntegerField()                 # minutes
     CommuteBy = models.CharField(max_length=10)
+    def __str__(self):
+        return str(self.FirstName)+'-'+str(self.Index)
 
 
 class Rooms_2018(models.Model):
@@ -51,3 +53,7 @@ class Feedback(models.Model):
     HomeWorkLoad = models.IntegerField(default=0)
     OverallPerformance = models.IntegerField(default=0)
     Suggestions = models.TextField(max_length=50, default='NA')
+
+class login_info(models.Model):
+    username = models.ForeignKey(Personal_Info)
+    password = models.CharField(max_length=16)
