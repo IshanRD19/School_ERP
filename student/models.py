@@ -3,6 +3,7 @@ from principal.models import Personal_Info, Subjects
 
 # Create your models here.
 
+
 class Students_2018(models.Model):
     RegistrationNo = models.CharField(primary_key=True, max_length=20)
     Index = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='student').values('FirstName')})
