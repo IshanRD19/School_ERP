@@ -9,6 +9,8 @@ class Teachers_2018(models.Model):
     Qualification = models.TextField(max_length=50, default='NA')
     Experience = models.IntegerField(default=0)                             # no. of months
     Salary = models.IntegerField(default=0)                                 # without commas
+    def __str__(self):
+        return str(self.TeacherID)
 
 
 class Classes_2018(models.Model):
@@ -17,8 +19,10 @@ class Classes_2018(models.Model):
     ClassTeacherID = models.ForeignKey(Teachers_2018)
     Students = models.IntegerField(default=0)
     Subjects = models.IntegerField(default=0)
-    From = models.DateField(auto_now=False)
-    Till = models.DateField(auto_now=False)
+    #From = models.DateField(auto_now=False)
+    #Till = models.DateField(auto_now=False)
+    def __str__(self):
+        return str(self.ClassSection)
 
 
 class Q_Papers(models.Model):
@@ -31,6 +35,7 @@ class Q_Papers(models.Model):
     EndTime = models.TimeField()
     Appeared = models.IntegerField(default=0)                               # total students who took test
     AvgMarks = models.IntegerField(default=0)
+
 
 class Teacher_Login_info(models.Model):
     username = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='Teacher').values('FirstName')})

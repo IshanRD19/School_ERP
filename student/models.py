@@ -1,19 +1,22 @@
 from django.db import models
-from principal.models import Personal_Info, Subjects
+from principal.models import *
+from teacher.models import *
 
 # Create your models here.
 
 
 class Students_2018(models.Model):
-    RegistrationNo = models.CharField(primary_key=True, max_length=20, default='NA')
+    RegistrationNo = models.CharField(primary_key=True, max_length=20)
     Index = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='Student').values('FirstName')})
     ClassSection = models.CharField(max_length=3, default='NA')             # 07B
     RollNo = models.CharField(max_length=3, default='NA')
-    From = models.DateField(auto_now=False)                                 # active from date
-    Till = models.DateField(auto_now=False)                                 # active till date
+    #From = models.DateField(auto_now=False)                                 # active from date
+    #Till = models.DateField(auto_now=False)                                 # active till date
     NoOfSubjects = models.IntegerField(default=0)                           # total subjects
     AcademicScore = models.IntegerField(default=0)                          # aggregate %
     ClassRank = models.IntegerField(default=0)                              # current rank in class
+    def __str__(self):
+        return str(self.ClassSection)+"-"+str(self.RollNo)
 
 
 class TimeTableLookUp(models.Model):
@@ -21,12 +24,17 @@ class TimeTableLookUp(models.Model):
     WeekDay = models.CharField(max_length=9)                                # Monday,Tuesday,...
     StartTime = models.TimeField()
     EndTime = models.TimeField()
+    def __str__(self):
+        return str(self.TTID)
 
 
 class TimeTable_2018(models.Model):
+    TTIndex = models.IntegerField(primary_key=True)
     TTID = models.ForeignKey(TimeTableLookUp)
-    ClassSection = models.CharField(max_length=3)
+    ClassSection = models.ForeignKey(Classes_2018)
     SubjectCode = models.ForeignKey(Subjects)
+    #def __str__(self):
+     #   return str(self.TTID)+"-"+str(self.ClassSection)+"-"+str(self.SubjectCode)
 
 
 class Attendance_2018(models.Model):

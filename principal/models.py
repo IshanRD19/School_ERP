@@ -33,14 +33,18 @@ class Rooms_2018(models.Model):
     AC = models.IntegerField(default=0)
     Windows = models.IntegerField(default=0)
     Doors = models.IntegerField(default=0)
+    def __str__(self):
+        return str(self.RoomID)
 
 
 class Subjects(models.Model):
     SubjectCode = models.CharField(primary_key=True, max_length=5)       # 07GEO, 12MAT
     SubjectName = models.CharField(max_length=20)                        # GEO, MAT
-    TaughtSince = models.DateField(auto_now=True)
-    TaughtTill = models.DateField(auto_now=True)
+    #TaughtSince = models.DateField(auto_now=False )
+    #TaughtTill = models.DateField(auto_now=False)
     NoOfTeachers = models.IntegerField(default=0)                        # total in all classes and sections
+    def __str__(self):
+        return str(self.SubjectCode)
 
 
 class Feedback(models.Model):
@@ -53,6 +57,7 @@ class Feedback(models.Model):
     HomeWorkLoad = models.IntegerField(default=0)
     OverallPerformance = models.IntegerField(default=0)
     Suggestions = models.TextField(max_length=50, default='NA')
+
 
 class login_info(models.Model):
     username = models.ForeignKey(Personal_Info)
