@@ -25,16 +25,16 @@ class Classes_2018(models.Model):
         return str(self.ClassSection)
 
 
-class Q_Papers(models.Model):
-    QPaperID = models.CharField(primary_key=True, max_length=15)            # DDMMYYYY-09C-GEO-2
-    SubjectCode = models.ForeignKey(Subjects)
-    MadeBy = models.ForeignKey(Teachers_2018)
-    Topic = models.TextField(max_length=25)                                 # test of which unit or topic
-    MaxMarks = models.IntegerField(default=0)
-    StartTime = models.TimeField()
-    EndTime = models.TimeField()
-    Appeared = models.IntegerField(default=0)                               # total students who took test
-    AvgMarks = models.IntegerField(default=0)
+#class Q_Papers(models.Model):
+ #   QPaperID = models.CharField(primary_key=True, max_length=15)            # DDMMYYYY-09C-GEO-2
+ #  SubjectCode = models.ForeignKey(Subjects)
+   # MadeBy = models.ForeignKey(Teachers_2018)
+    #Topic = models.TextField(max_length=25)                                 # test of which unit or topic
+    #MaxMarks = models.IntegerField(default=0)
+    #StartTime = models.TimeField()
+    #EndTime = models.TimeField()
+    #Appeared = models.IntegerField(default=0)                               # total students who took test
+    #AvgMarks = models.IntegerField(default=0)
 
 
 class Teacher_Login_info(models.Model):

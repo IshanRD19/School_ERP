@@ -47,16 +47,16 @@ class Subjects(models.Model):
         return str(self.SubjectCode)
 
 
-class Feedback(models.Model):
-    FeedbackID = models.CharField(primary_key=True, max_length=10)
-    GivenBy = models.CharField(max_length=20)
-    GivenFor = models.CharField(max_length=20)
-    SubjectCode = models.ForeignKey(Subjects, max_length=5)
-    SubjectDifficulty = models.IntegerField(default=0)                   # rating of 1 to 5
-    CreateInterest = models.IntegerField(default=0)
-    HomeWorkLoad = models.IntegerField(default=0)
-    OverallPerformance = models.IntegerField(default=0)
-    Suggestions = models.TextField(max_length=50, default='NA')
+#class Feedback(models.Model):
+ #   FeedbackID = models.CharField(primary_key=True, max_length=10)
+  #  GivenBy = models.CharField(max_length=20)
+   # GivenFor = models.CharField(max_length=20)
+    #SubjectCode = models.ForeignKey(Subjects, max_length=5)
+    #SubjectDifficulty = models.IntegerField(default=0)                   # rating of 1 to 5
+    #CreateInterest = models.IntegerField(default=0)
+    #HomeWorkLoad = models.IntegerField(default=0)
+    #OverallPerformance = models.IntegerField(default=0)
+    #Suggestions = models.TextField(max_length=50, default='NA')
 
 
 class login_info(models.Model):

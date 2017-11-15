@@ -1,6 +1,7 @@
 from django.db import models
 from principal.models import *
 from teacher.models import *
+from student.models import *
 
 # Create your models here.
 
@@ -29,19 +30,17 @@ class TimeTableLookUp(models.Model):
 
 
 class TimeTable_2018(models.Model):
-    TTIndex = models.IntegerField(primary_key=True)
     TTID = models.ForeignKey(TimeTableLookUp)
-    ClassSection = models.ForeignKey(Classes_2018)
-    SubjectCode = models.ForeignKey(Subjects)
-    #def __str__(self):
-     #   return str(self.TTID)+"-"+str(self.ClassSection)+"-"+str(self.SubjectCode)
+    Class = models.ForeignKey(Classes_2018)
+    Subject = models.ForeignKey(Subjects)
+    def __str__(self):
+        return str(self.TTID)+"-"+str(self.Class)+"-"+str(self.Subject)
 
-
-class Attendance_2018(models.Model):
-    RegistrationNo = models.ForeignKey(Students_2018)
-    TTID = models.ForeignKey(TimeTableLookUp, max_length=12)
-    ClassDate = models.DateField(auto_now=False, null=True, blank=True)         # MM/DD/YYYY
-    Attendance = models.CharField(max_length=8)                            # present or absent
+#class Attendance_2018(models.Model):
+ #   RegistrationNo = models.ForeignKey(Students_2018)
+  #  TTID = models.ForeignKey(TimeTableLookUp, max_length=12)
+   # ClassDate = models.DateField(auto_now=False, null=True, blank=True)         # MM/DD/YYYY
+    #Attendance = models.CharField(max_length=8)                            # present or absent
 
 
 class Student_login_info(models.Model):
