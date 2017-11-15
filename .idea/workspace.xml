@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="student login">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" afterPath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teacher/views.py" afterPath="$PROJECT_DIR$/teacher/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -420,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510472922724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="student login">
+      <created>1510732442594</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510732442594</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
