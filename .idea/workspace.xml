@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/student/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/student/migrations/__init__.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/principal/models.py" afterPath="$PROJECT_DIR$/principal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/admin.py" afterPath="$PROJECT_DIR$/student/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/models.py" afterPath="$PROJECT_DIR$/student/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teacher/models.py" afterPath="$PROJECT_DIR$/teacher/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -327,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510472922724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="migration fix">
+      <created>1510729331237</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510729331237</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -387,7 +387,8 @@
     <MESSAGE value="principal view" />
     <MESSAGE value="issues fixed" />
     <MESSAGE value="student login" />
-    <option name="LAST_COMMIT_MESSAGE" value="student login" />
+    <MESSAGE value="migration fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
