@@ -42,6 +42,17 @@
             <td>{{ context.AddressLine1 }}, {{ context.AddressLine2 }}, {{ context.AddressLine3 }}</td>
         </tr>
     </table>
+    <hr>
+    <table cellpadding="5">
+        <tr>
+            {% for i in classes %}
+                <td>
+                    <a href="#">{{ i }}</a>
+                </td>
+            {% endfor %}
+        </tr>
+
+    </table>
 
 </body>
 </html>
