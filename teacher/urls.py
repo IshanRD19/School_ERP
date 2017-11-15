@@ -19,4 +19,6 @@ from . import views
 
 urlpatterns = [
     url(r'^home/(?P<index>[0-9]+)$', views.home),
+    url(r'^assignment/(?P<index>[0-9]+)/(?P<sub>[0-9]+)$', views.assignment),
+    url(r'^assignment/(?P<index>[0-9]+)/(?P<sub>[0-9]+)/add$', views.add_assignment),
 ]

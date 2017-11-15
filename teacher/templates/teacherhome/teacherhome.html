@@ -43,11 +43,11 @@
         </tr>
     </table>
     <hr>
-    <table cellpadding="5">
+    <table cellpadding="10" border="2">
         <tr>
             {% for i in classes %}
                 <td>
-                    <a href="#">{{ i }}</a>
+                    <a href="/teacher/assignment/{{ context.Index }}/{{ i.pk }}">{{ i }}</a>
                 </td>
             {% endfor %}
         </tr>

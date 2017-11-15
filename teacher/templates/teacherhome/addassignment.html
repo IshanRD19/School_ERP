@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        count = 1
+        function addrow(){
+            count++;
+            var table1 = document.getElementById("main");
+
+		        var row = table1.insertRow(2);
+		        var cell1 = row.insertCell(0);
+		        cell1.innerHTML = "Parameter";
+		        var cell2 = row.insertCell(1);
+		        cell2.innerHTML = "<select name="+count+">{% for i in context %}<option name = \"{{ i.GradingParameter }}\"> {{ i.GradingParameter }}</option>{% endfor %}</select>";
+
+
+        }
+
+    </script>
+    <meta charset="UTF-8">
+
+    <title>Add Assignment</title>
+</head>
+<body>
+<h1><center>Add Assignment</center></h1><hr>
+
+<form method="post" action="#">
+    {% csrf_token %}
+    <table cellpadding="10" id="main">
+        <tr>
+            <td>Description</td>
+            <td>
+                <input type = "text" name = "desc">
+            </td>
+        </tr>
+        <tr>
+            <td>Parameter</td>
+            <td>
+                <select name="1">
+                    {% for i in context %}
+                    <option name = "{{ i.GradingParameter }}"> {{ i.GradingParameter }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><input type="button" onclick="addrow()" value="Add Parameter"></center></td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+</head>
+<body>
+    <h1><center>Assignments</center></h1><hr>
+    <h2>
+        <a href = "/teacher/assignment/{{ user.Index }}/{{ sub }}/add">Add Assignment</a></h2>
+    <table cellpadding="10">
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+        {% for i in context %}
+            <tr>
+                <td>{{ i.Date }}</td>
+                <td>{{ i.Description }}</td>
+                <td><a href = "#">Grade</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
