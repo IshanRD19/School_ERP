@@ -1,5 +1,6 @@
 from django.db import models
 from principal.models import  Personal_Info, Rooms_2018, Subjects
+
 # Create your models here.
 
 class Teachers_2018(models.Model):
@@ -23,6 +24,14 @@ class Classes_2018(models.Model):
     #Till = models.DateField(auto_now=False)
     def __str__(self):
         return str(self.ClassSection)
+
+
+class SubjectAllotment_2018 (models.Model):
+    Class = models.ForeignKey(Classes_2018)
+    Subject = models.ForeignKey(Subjects)
+    Teacher = models.ForeignKey(Teachers_2018)
+    def __str__(self):
+        return str(self.Class)+"-"+str(self.Subject)+"-"+str(self.Teacher.Index.FirstName)
 
 
 #class Q_Papers(models.Model):
