@@ -49,3 +49,18 @@ class SubjectAllotment_2018 (models.Model):
 class Teacher_Login_info(models.Model):
     username = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='Teacher').values('FirstName')})
     password = models.CharField(max_length=16)
+
+
+class Assigments_2018(models.Model):
+    Date = models.DateField(auto_now=True)
+    Teacher = models.ForeignKey(Teachers_2018)
+    ClassSection = models.ForeignKey(Classes_2018)
+    Subject = models.ForeignKey(Subjects)
+    Description = models.TextField(max_length=250)
+    def __str__(self):
+        return str(self.id)+"-"+str(self.Subject)
+
+
+
+
+

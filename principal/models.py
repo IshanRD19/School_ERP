@@ -62,3 +62,9 @@ class Subjects(models.Model):
 class login_info(models.Model):
     username = models.ForeignKey(Personal_Info)
     password = models.CharField(max_length=16)
+
+
+class AssignmentParameters(models.Model):
+    GradingParameter = models.CharField(max_length=20)
+    def __str__(self):
+        return str(self.id)+":"+str(self.GradingParameter)

@@ -1,7 +1,6 @@
 from django.db import models
-from principal.models import *
-from teacher.models import *
-from student.models import *
+from principal.models import Rooms_2018, Personal_Info, AssignmentParameters
+from teacher.models import Teachers_2018, Classes_2018, Subjects, Assigments_2018
 
 # Create your models here.
 
@@ -46,3 +45,10 @@ class TimeTable_2018(models.Model):
 class Student_login_info(models.Model):
     username = models.ForeignKey(Personal_Info, limit_choices_to={'EMail__in':Personal_Info.objects.filter(Role='Student').values('EMail')})
     password = models.CharField(max_length=16)
+
+
+class AssignmentGrades_2018(models.Model):
+    Assigment = models.ForeignKey(Assigments_2018)
+    Student = models.ForeignKey(Students_2018)
+    GradingParameter = models.ForeignKey(AssignmentParameters)
+    Grade = models.IntegerField(default=3)
