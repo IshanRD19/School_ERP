@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GradeAssignment</title>
+</head>
+<body>
+<h1><center>Grade Assignment</center></h1><hr>
+    <form method="post" action="/teacher/assignment/{{ index }}/{{ id }}/updategrade">
+        {% csrf_token %}
+        <table cellpadding="8">
+            <tr>
+                <th>Name</th>
+                {% for i in params %}
+                    <th>
+                        {{ i }}
+                    </th>
+                {% endfor %}
+            </tr>
+
+                {% for key, value in context.items %}
+                    <tr>
+                        <td>{{ value.0 }}</td>
+
+                    {% for i in value.1 %}
+                        <td><input type="text" name="{{ i.pk }}" value="{{ i.Grade }}"></td>
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+
+        </table>
+    </form>
+
+
+</body>
+</html>

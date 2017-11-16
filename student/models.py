@@ -8,7 +8,7 @@ from teacher.models import Teachers_2018, Classes_2018, Subjects, Assigments_201
 class Students_2018(models.Model):
     RegistrationNo = models.CharField(primary_key=True, max_length=20)
     Index = models.ForeignKey(Personal_Info, limit_choices_to={'FirstName__in':Personal_Info.objects.filter(Role='Student').values('FirstName')})
-    ClassSection = models.CharField(max_length=3, default='NA')             # 07B
+    ClassSection = models.ForeignKey(Classes_2018)             # 07B
     RollNo = models.CharField(max_length=3, default='NA')
     #From = models.DateField(auto_now=False)                                 # active from date
     #Till = models.DateField(auto_now=False)                                 # active till date
