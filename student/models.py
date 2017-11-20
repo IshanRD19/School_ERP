@@ -45,6 +45,8 @@ class TimeTable_2018(models.Model):
 class Student_login_info(models.Model):
     username = models.ForeignKey(Personal_Info, limit_choices_to={'EMail__in':Personal_Info.objects.filter(Role='Student').values('EMail')})
     password = models.CharField(max_length=16)
+    def __str__(self):
+        return str(self.username)
 
 
 class AssignmentGrades_2018(models.Model):
