@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from principal.models import Personal_Info, AssignmentParameters
-from teacher.models import SubjectAllotment_2018, Teachers_2018, Assigments_2018
-from student.models import AssignmentGrades_2018, Students_2018
+from principal.models import Personal_Info, AssignmentParameters, Subjects
+from teacher.models import SubjectAllotment_2018, Teachers_2018, Assigments_2018, Classes_2018
+from student.models import AssignmentGrades_2018, Students_2018, TimeTable_2018
 # Create your views here.
 
 
@@ -11,7 +11,10 @@ def home(request, index):
     #find the id for teacher corresponding to the personal info id
     teacher_id = Teachers_2018.objects.get(Index=user)
     subject_teacher = SubjectAllotment_2018.objects.filter(Teacher=teacher_id)
-    return render(request, 'teacherhome/teacherhome.html', {'context': user, 'classes': subject_teacher})
+    TimeTable = []
+    for i in subject_teacher:
+        TimeTable.append(TimeTable_2018.objects.get(Subject=i.Subject, Class=i.Class))
+    return render(request, 'teacherhome/teacherhome.html', {'context': user, 'classes': subject_teacher, "subjects": TimeTable})
 
 
 def assignment(request, index, sub):
@@ -92,4 +95,9 @@ def update_grade(request, index, id):
     class_section = SubjectAllotment_2018.objects.get(Class=assignment1.Assigment.ClassSection, Teacher=assignment1.Assigment.Teacher, Subject=assignment1.Assigment.Subject)
     # return HttpResponse(class_section)
     return redirect('/teacher/assignment/'+str(index)+"/"+str(class_section.pk))
+
+
+def view_class(request, index, classid):
+    students = Students_2018.objects.filter(ClassSection=Classes_2018.objects.filter(ClassSection=classid))
+    return render(request, 'teacherhome/viewclasses.html', {'context': students})
 

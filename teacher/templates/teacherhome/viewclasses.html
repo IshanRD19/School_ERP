@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Classes</title>
+</head>
+<body>
+    <h1><center>View Classes</center></h1>
+    <table cellpadding="10">
+        <tr>
+            <th>Registration Number</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Class Rank</th>
+        </tr>
+        {% for i in context %}
+        <tr>
+            <td>{{ i.RegistrationNo }}</td>
+            <td>{{ i.Index.FirstName }} {{ i.Index.LastName }}</td>
+            <td>{{ i.AcademicScore }}</td>
+            <td>{{ i.Rank }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
