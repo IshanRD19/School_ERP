@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from principal.models import Personal_Info, AssignmentParameters, Subjects
 from teacher.models import SubjectAllotment_2018, Teachers_2018, Assigments_2018, Classes_2018
 from student.models import AssignmentGrades_2018, Students_2018, TimeTable_2018
@@ -100,4 +99,8 @@ def update_grade(request, index, id):
 def view_class(request, index, classid):
     students = Students_2018.objects.filter(ClassSection=Classes_2018.objects.filter(ClassSection=classid))
     return render(request, 'teacherhome/viewclasses.html', {'context': students})
+
+def view_student(request, studentreg):
+    student = Students_2018.objects.get(RegistrationNo=studentreg)
+    return render(request, 'teacherhome/viewstudent.html', {'context': student.Index})
 

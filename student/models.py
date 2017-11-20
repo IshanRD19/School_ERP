@@ -24,6 +24,7 @@ class TimeTableLookUp(models.Model):
     WeekDay = models.CharField(max_length=9)                                # Monday,Tuesday,...
     StartTime = models.TimeField()
     EndTime = models.TimeField()
+
     def __str__(self):
         return str(self.TTID)
 

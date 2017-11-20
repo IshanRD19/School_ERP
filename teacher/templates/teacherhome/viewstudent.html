@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Student </title>
+    <style>
+        table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+<h1><center>Student Details</center></h1>
+<hr><br>
+<table cellpadding="10" align="center" width="50%">
+    <tr>
+        <th>Name</th>
+        <td>{{ context.FirstName }} {{ context.LastName }}</td>
+    </tr>
+    <tr>
+        <th>Date Of Birth</th>
+        <td>{{ context.DOB }}</td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>{{ context.Sex }}</td>
+    </tr>
+    <tr>
+        <th>Contact</th>
+        <td>{{ context.Contact }}</td>
+    </tr>
+    <tr>
+        <th>E-Mail</th>
+        <td>{{ context.EMail }}</td>
+    </tr>
+    <tr>
+        <th>Blood Group</th>
+        <td>{{ context.BloodGroup }}</td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td>{{ context.AddressLine1 }} {{ context.AddressLine2 }} {{ context.AddressLine3 }}</td>
+    </tr>
+    <tr>
+        <th>Pincode</th>
+        <td>{{ context.Pincode }}</td>
+    </tr>
+</table>
+
+</body>
+</html>

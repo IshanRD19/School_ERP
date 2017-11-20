@@ -16,7 +16,7 @@
         {% for i in context %}
         <tr>
             <td>{{ i.RegistrationNo }}</td>
-            <td>{{ i.Index.FirstName }} {{ i.Index.LastName }}</td>
+            <td><a href="/teacher/viewstudent/{{ i.RegistrationNo }}">{{ i.Index.FirstName }} {{ i.Index.LastName }}</a></td>
             <td>{{ i.AcademicScore }}</td>
             <td>{{ i.Rank }}</td>
         </tr>

@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^assignment/(?P<index>[0-9]+)/(?P<id>[0-9]+)/grade$', views.grade_assignment),
     url(r'^assignment/(?P<index>[0-9]+)/(?P<id>[0-9]+)/updategrade$', views.update_grade),
     url(r'^class/(?P<index>[0-9]+)/(?P<classid>[A-Z0-9]+)$', views.view_class),
+    url(r'^viewstudent/(?P<studentreg>[A-Z0-9]+)$', views.view_student),
 ]
