@@ -26,9 +26,10 @@ def login_attempt(request):
         elif user.Role == 'Student':
             try:
                 Student_login_info.objects.get(username=user, password=password)
-                return HttpResponse('Welcome')
+                return redirect('/student/home/'+str(user.Index))
             except:
                 return render(request, 'index.html', {'message':'Invalid Password!'})
+
         elif user.Role == 'Teacher':
             try:
                 Teacher_Login_info.objects.get(username=user, password=password)

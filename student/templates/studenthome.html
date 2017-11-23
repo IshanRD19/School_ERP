@@ -5,16 +5,10 @@
     <title>Student | Home</title>
 </head>
 <body>
-<h1>Student Personal Info</h1><hr><br><br><br>
+<h1><center>Student Dashboard</center></h1><hr><br>
+<h2>Welcome, {{ context.FirstName }} {{ context.LastName }}</h2>
+<h3>Basic Details:</h3>
 <table align ="center">
-        <tr>
-            <th>First Name</th>
-            <td>{{ context.FirstName }}</td>
-        </tr>
-        <tr>
-            <th>Last Name</th>
-            <td>{{ context.LastName }}</td>
-        </tr>
         <tr>
             <th>DOB</th>
             <td>{{ context.DOB }}</td>
@@ -40,9 +34,20 @@
         </tr>
     </table>
 <hr>
-<table cellpadding="10">
-
+<table align="center" cellpadding="10">
+    <tr>
+        <th>Subject</th>
+        <th>Aggregate Marks</th>
+        <th>Feedback</th>
+        <th>Attendance</th>
+    </tr>
+    {% for i in subjects %}
+    <tr>
+        <td >
+            <a href="/student/{{ context.Index }}/subject/{{ i.Subject.SubjectCode }}">{{ i.Subject.SubjectName }}</a>
+        </td>
+    </tr>
+    {% endfor %}
 </table>
-
 </body>
 </html>

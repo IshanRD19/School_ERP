@@ -100,6 +100,7 @@ def view_class(request, index, classid):
     students = Students_2018.objects.filter(ClassSection=Classes_2018.objects.filter(ClassSection=classid))
     return render(request, 'teacherhome/viewclasses.html', {'context': students})
 
+
 def view_student(request, studentreg):
     student = Students_2018.objects.get(RegistrationNo=studentreg)
     return render(request, 'teacherhome/viewstudent.html', {'context': student.Index})
