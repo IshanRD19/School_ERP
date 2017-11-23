@@ -5,7 +5,21 @@
     <title>Subject Details</title>
 </head>
 <body>
-<h1>welcome!</h1>
-{{ context }}
+<h1>{{ subject }} Details</h1><hr><br>
+<h4><center>Teacher: {{ teacher.Teacher.Index.FirstName}}</center></h4>
+<table cellpadding="10" align="center">
+    <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Grades</th>
+    </tr>
+    {% for i in context %}
+    <tr>
+        <td>{{ i.Date }}</td>
+        <td>{{ i.Description }}</td>
+
+    </tr>
+    {% endfor %}
+</table>
 </body>
 </html>

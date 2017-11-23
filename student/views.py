@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from principal.models import Personal_Info
+from principal.models import Personal_Info, Subjects
 from teacher.models import SubjectAllotment_2018, Classes_2018, Assigments_2018
 from student.models import Students_2018
 # Create your views here.
@@ -13,5 +13,8 @@ def home(request, index):
 
 
 def view_subject_info(request, index, subcode):
-    assignments = Assigments_2018.objects.filter(Subject=subcode)
-    return render(request, 'subjectinfo.html', {'context':assignments})
+    subject_name = Subjects.objects.get(SubjectCode=subcode).SubjectName
+    student_class = Students_2018.objects.get(Index=index).ClassSection
+    assignments = Assigments_2018.objects.filter(Subject=subcode, ClassSection=student_class)
+    teacher = SubjectAllotment_2018.objects.get(Class=student_class, Subject=subcode)
+    return render(request, 'subjectinfo.html', {'context':assignments, 'teacher':teacher, 'subject':subject_name})
