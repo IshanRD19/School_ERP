@@ -14,29 +14,16 @@ table, th, td {
     </style>
 </head>
 <body>
-    <h1><center>Teacher Home</center></h1>
-    <table align ="center" cellpadding="10">
-        <tr>
-            <th>First Name</th>
-            <td>{{ context.FirstName }}</td>
-            <th>Last Name</th>
-            <td>{{ context.LastName }}</td>
-            <th>DOB</th>
-            <td>{{ context.DOB }}</td>
-            <th>Sex</th>
-            <td>{{ context.Sex }}</td>
-        </tr>
-        <tr>
-            <th>Contact</th>
-            <td>{{ context.Contact }}</td>
-            <th>E-mail</th>
-            <td>{{ context.EMail }}</td>
-            <th>Blood Group</th>
-            <td>{{ context.BloodGroup }}</td>
-            <th>Address</th>
-            <td>{{ context.AddressLine1 }}, {{ context.AddressLine2 }}, {{ context.AddressLine3 }}</td>
-        </tr>
-    </table>
+    <h1><center>Welcome, {{ context.FirstName }}!</center></h1>
+    <a href="/teacher/{{ context.Index }}/profile/">Profile</a>
+    <a href="">Logout</a>
+    <a href="/teacher/{{ context.Index }}/tasklist/">Task List</a>
+    <a href="/teacher/{{ context.Index }}/messages/">Messages</a>
+    <a href="/teacher/{{ context.Index }}/timetable">Time Table</a>
+    <a href="/teacher/{{ context.Index }}/calendar">Calendar</a>
+    <a href="/teacher/{{ context.Index }}/topperformers">Top Performers</a>
+    <a href="/teacher/{{ context.Index }}/laggards">Laggards</a>
+    <br>
     <hr>
     <table cellpadding="10">
         <tr>
@@ -46,7 +33,7 @@ table, th, td {
             <th>Period</th>
             <th>Weekday</th>
         </tr>
-        {% for i in subjects %}
+        {% for i in classes %}
         <tr>
             <td>
                 {{ i.Subject.SubjectName }}

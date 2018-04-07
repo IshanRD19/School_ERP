@@ -25,8 +25,8 @@ class Students(models.Model):
     Attribute3Rating = models.IntegerField(default=0)
     Attribute4Rating = models.IntegerField(default=0)
     Attribute5Rating = models.IntegerField(default=0)
-    Sibling1DOB = models.DateField(default='')
-    Sibling2DOB = models.DateField(default='')
+    Sibling1DOB = models.DateField(blank=True, null=True)
+    Sibling2DOB = models.DateField(blank=True, null=True)
     def __str__(self):
         return str(self.ClassSection)+"-"+str(self.RollNo)
 
