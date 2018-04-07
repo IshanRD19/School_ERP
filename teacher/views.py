@@ -18,7 +18,7 @@ def home(request, index):
 
 def assignment(request, index, sub):
     user = Personal_Info.objects.get(Index=index)
-    teacher_id = Teachers_2018.objects.get(Index=user)
+    teacher_id = Teachers.objects.get(Index=user)
     subjAllot = SubjectAllotment.objects.get(pk=sub)
     assignments = Assigments.objects.filter(Teacher=teacher_id,ClassSection=subjAllot.Class)
     return render(request, 'teacherhome/assignmenthome.html', {'context': assignments, 'user':user, 'sub':sub})
