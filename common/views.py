@@ -7,7 +7,7 @@ from teacher.models import Teacher_Login_info
 
 
 def home(request):
-    return render(request, 'index.html', {})
+    return render(request, 'home.html')
 
 
 def login_attempt(request):

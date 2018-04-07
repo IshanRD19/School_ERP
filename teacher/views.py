@@ -10,10 +10,10 @@ def home(request, index):
     #find the id for teacher corresponding to the personal info id
     teacher_id = Teachers.objects.get(Index=user)
     subject_teacher = SubjectAllotment.objects.filter(Teacher=teacher_id)
-    TimeTable = []
+    timetable = []
     for i in subject_teacher:
-        TimeTable.append(TimeTable.objects.filter(Subject=i.Subject, Class=i.Class))
-    return render(request, 'teacherhome/teacherhome.html', {'context': user, 'classes': subject_teacher, "subjects": TimeTable})
+        timetable.append(TimeTable.objects.filter(Subject=i.Subject, Class=i.Class))
+    return render(request, 'teacherhome/teacherhome.html', {'context': user, 'classes': subject_teacher, "subjects": timetable})
 
 
 def assignment(request, index, sub):
