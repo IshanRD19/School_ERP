@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create test</title>
+</head>
+<body>
+<h1> Create test for class</h1><hr>
+{% for i in context %}
+    <a href = "/teacher/subjective/{{ index }}/create/{{ i.Class.ClassSection }}">{{ i.Class.ClassSection }}</a>
+    <br>
+{% endfor %}
+
+</body>
+</html>

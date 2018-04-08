@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPaper</title>
+    <script>
+        function addparam(id){
+            var table1 = document.getElementById("T"+id);
+            var row_num = table1.rows.length;
+            //document.getElementById("totalmarks").innerHTML = "here";
+
+            var row1 = table1.insertRow(row_num);
+            var cell1 = row1.insertCell(0);
+            cell1.innerHTML = "Parameter:<input type=\"text\" name=\"P"+(row_num+1)+"\">";
+            var cell2 = row1.insertCell(1);
+            cell2.innerHTML = "Marks:<input type=\"text\" name=\"M"+(row_num+1)+"\" value=\"0\">";
+        }
+
+        function validate(id, marks){
+
+            //alert("here");
+            var table1 = document.getElementById("T"+id.substring(1));
+            var row_num = table1.rows.length;
+            var sum = 0;
+            //alert(sum);
+            for(var i = 1; i <= row_num ; i++){
+                sum += parseInt(document.forms[id.substring(1)]["M"+i].value);
+            }
+
+            if(sum == marks){
+                alert("Numbers match");
+                return true;
+            }else{
+                alert("sum of marks of parameters should be equal to total marks!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Question Paper</h1>
+<hr>
+<table width="80%" border="1">
+{% for i, j in context %}
+    <tr><th>{{ i.question_number }}</th><td>{{ i.statement }}</td><td>{{ i.total_marks }}</td></tr>
+    {% if j.isEmpty %}
+    <tr><td></td><td>
+        <form name="{{ i.question_number }}" method="post" action="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ paper_id }}/{{ i.id }}/addparameter" id="F{{ i.question_number }}" onsubmit="return validate(this.id, {{i.total_marks}})" >
+            {% csrf_token %}
+            <table id="T{{ i.question_number }}">
+    <tr>
+        <td>Parameter:<input type="text" name="P1"></td>
+        <td>Marks:<input type="text" name="M1" value="0"></td>
+    </tr>
+    </table><br>
+        <input type="submit"></form><button onclick="addparam(this.id)" id="{{ i.question_number }}">Add Parameter</button><br>
+    </td></tr>
+    {% else %}
+    <tr><td></td><td>
+        {% for k, l in j.param_marks %}
+            {{ k }} - {{ l }} <br>
+        {% endfor %}
+    </td>
+    </tr>
+
+
+    {% endif %}
+    {% endfor %}
+</table>
+</body>
+</html>

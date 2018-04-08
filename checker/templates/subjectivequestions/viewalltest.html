@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create test</title>
+</head>
+<body>
+<h1> Question Papers for class {{ class_section }}</h1><hr>
+<table width="80%">
+    <tr><th>Index</th><th>Created On</th><th>Upload answers</th></tr>
+{% for i in context %}
+    <tr><td>{{ i.id }}</td><td><a href="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ i.id }}">{{ i.created }}</a></td><td><a href="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ i.id }}/upload">Upload/CheckAnswers</a></td></tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

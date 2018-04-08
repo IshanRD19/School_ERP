@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="Integerated multiple choice">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/admin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/apps.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0001_initial.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0002_auto_20180407_0955.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0003_auto_20180408_1400.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/models.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/allquestionsforedit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/attempttest.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/createquestionpaper.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/createtest.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/editquestion.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/editquestionpaper.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/logs.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/questionpapersforedit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/taketesthome.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/testresults.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/uploadquestions.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/tests.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/views.py" />
+    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SchoolERP/settings.py" afterPath="$PROJECT_DIR$/SchoolERP/settings.py" />
+      <change beforePath="$PROJECT_DIR$/SchoolERP/urls.py" afterPath="$PROJECT_DIR$/SchoolERP/urls.py" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" afterPath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
+      <change beforePath="$PROJECT_DIR$/teacher/urls.py" afterPath="$PROJECT_DIR$/teacher/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,10 +19,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="36">
+              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#1776#2086#0" expanded="false" />
@@ -50,23 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Question_Bank/models.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Question_Bank/views.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/checker/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="179" column="238" lean-forward="false" selection-start-line="179" selection-start-column="238" selection-end-line="179" selection-end-column="238" />
+            <state relative-caret-position="-297">
+              <caret line="198" column="72" lean-forward="true" selection-start-line="198" selection-start-column="72" selection-end-line="198" selection-end-column="72" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -74,34 +67,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testresults.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Question_Bank/templates/questionpaper/testresults.html">
+      <file leaf-file-name="studentsviewmarks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/studentsviewmarks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="126">
+              <caret line="16" column="116" lean-forward="false" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="attempttest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Question_Bank/templates/questionpaper/attempttest.html">
+      <file leaf-file-name="uploadpaper.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/uploadpaper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-576">
-              <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="252">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Question_Bank/urls.py">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="162">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teacher/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="16" />
               <folding>
-                <element signature="e#699#731#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#3311#3559#0" expanded="false" />
+                <element signature="e#3598#4086#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teacher/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#3473#4054#0" expanded="false" />
+                <element signature="e#4102#4277#0" expanded="false" />
+                <element signature="e#4323#4467#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testsviewmarks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/testsviewmarks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="125" lean-forward="false" selection-start-line="11" selection-start-column="125" selection-end-line="11" selection-end-column="125" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,14 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/student/template/studentlogin.html" />
-        <option value="$PROJECT_DIR$/principal/urls.py" />
-        <option value="$PROJECT_DIR$/principal/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/principal/migrations/0002_auto_20171111_2022.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/common/urls.py" />
-        <option value="$PROJECT_DIR$/SchoolERP/urls.py" />
-        <option value="$PROJECT_DIR$/teacher/templates/teacherhome/addassignment.html" />
         <option value="$PROJECT_DIR$/teacher/templates/teacherhome/assignmenthome.html" />
         <option value="$PROJECT_DIR$/teacher/templates/teacherhome/gradeassignment.html" />
         <option value="$PROJECT_DIR$/common/templates/index.html" />
@@ -148,9 +170,6 @@
         <option value="$PROJECT_DIR$/principal/models.py" />
         <option value="$PROJECT_DIR$/common/views.py" />
         <option value="$PROJECT_DIR$/teacher/views.py" />
-        <option value="$PROJECT_DIR$/SchoolERP/settings.py" />
-        <option value="$PROJECT_DIR$/teacher/urls.py" />
-        <option value="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
         <option value="$PROJECT_DIR$/Question_Bank/templates/questionpaper/home.html" />
         <option value="$PROJECT_DIR$/Question_Bank/templates/questionpaper/createtest.html" />
         <option value="$PROJECT_DIR$/Question_Bank/templates/questionpaper/uploadquestions.html" />
@@ -167,14 +186,33 @@
         <option value="$PROJECT_DIR$/Question_Bank/templates/questionpaper/attempttest.html" />
         <option value="$PROJECT_DIR$/Question_Bank/views.py" />
         <option value="$PROJECT_DIR$/Question_Bank/templates/questionpaper/testresults.html" />
+        <option value="$PROJECT_DIR$/SchoolERP/urls.py" />
+        <option value="$PROJECT_DIR$/checker/models.py" />
+        <option value="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
+        <option value="$PROJECT_DIR$/teacher/urls.py" />
+        <option value="$PROJECT_DIR$/SchoolERP/settings.py" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/home.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/createtest.html" />
+        <option value="$PROJECT_DIR$/checker/admin.py" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/createtestpage.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/viewtest.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/viewalltest.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/testpaper.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/uploadpaper.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/checkpaper.html" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/classesviewmarks.html" />
+        <option value="$PROJECT_DIR$/checker/urls.py" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/testsviewmarks.html" />
+        <option value="$PROJECT_DIR$/checker/views.py" />
+        <option value="$PROJECT_DIR$/checker/templates/subjectivequestions/studentsviewmarks.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="278" />
-    <option name="y" value="1" />
-    <option name="width" value="950" />
-    <option name="height" value="780" />
+    <option name="x" value="504" />
+    <option name="y" value="27" />
+    <option name="width" value="673" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -203,13 +241,20 @@
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
               <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
               <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="checker" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="subjectivequestions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
@@ -219,53 +264,12 @@
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
               <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="Question_Bank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="Question_Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="Question_Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="Question_Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="questionpaper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="SchoolERP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
               <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
               <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="School_ERP" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="School_ERP" type="b2602c69:ProjectViewProjectNode" />
@@ -605,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523197449593</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Integerated multiple choice">
+      <created>1523197563690</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1523197563690</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -688,101 +699,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/teacher/template/teacherlogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/template/studenthome.html" />
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacherhome/assignmenthome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="18" column="114" lean-forward="false" selection-start-line="18" selection-start-column="114" selection-end-line="18" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/migrations/0015_auto_20171115_1338.py" />
-    <entry file="file://$PROJECT_DIR$/principal/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/principal/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -830,14 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolERP/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/principal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,36 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/principal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#97#1270#0" expanded="false" />
-            <element signature="e#3414#3504#0" expanded="false" />
-            <element signature="e#3553#3685#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolERP/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#643#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="81" column="53" lean-forward="false" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Question_Bank/templates/questionpaper/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -905,19 +783,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="42" />
-          <folding>
-            <element signature="e#2467#3428#0" expanded="false" />
-            <element signature="e#3473#4054#0" expanded="false" />
-            <element signature="e#4102#4277#0" expanded="false" />
-            <element signature="e#4323#4467#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,17 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <element signature="e#3311#3559#0" expanded="false" />
-            <element signature="e#3598#4086#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student/templates/subjectinfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -980,16 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="22" column="78" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="78" />
-          <folding>
-            <element signature="e#643#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student/templates/studenthome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1003,19 +847,6 @@
         <state relative-caret-position="126">
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="50" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#1776#2086#0" expanded="false" />
-            <element signature="e#2783#3023#0" expanded="false" />
-            <element signature="e#3068#3257#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,16 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Question_Bank/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="e#699#731#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Question_Bank/templates/questionpaper/attempttest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-576">
@@ -1072,9 +893,9 @@
     <entry file="file://$PROJECT_DIR$/Question_Bank/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1084,7 +905,7 @@
         <state relative-caret-position="171">
           <caret line="179" column="238" lean-forward="false" selection-start-line="179" selection-start-column="238" selection-end-line="179" selection-end-column="238" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1094,6 +915,225 @@
         <state relative-caret-position="234">
           <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Question_Bank/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="e#699#731#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolERP/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#643#684#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/principal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1309">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#3414#3504#0" expanded="false" />
+            <element signature="e#3553#3685#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolERP/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/createtest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#3473#4054#0" expanded="false" />
+            <element signature="e#4102#4277#0" expanded="false" />
+            <element signature="e#4323#4467#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/createtestpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="39" column="85" lean-forward="false" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/viewtest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="107" lean-forward="false" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/testpaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="47" column="99" lean-forward="false" selection-start-line="47" selection-start-column="99" selection-end-line="47" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#1776#2086#0" expanded="false" />
+            <element signature="e#2783#3023#0" expanded="false" />
+            <element signature="e#3068#3257#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#3311#3559#0" expanded="false" />
+            <element signature="e#3598#4086#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/checkpaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/viewalltest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/uploadpaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/classesviewmarks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="96" lean-forward="false" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/testsviewmarks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="125" lean-forward="false" selection-start-line="11" selection-start-column="125" selection-end-line="11" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/studentsviewmarks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="116" lean-forward="false" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checker/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="198" column="72" lean-forward="true" selection-start-line="198" selection-start-column="72" selection-end-line="198" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

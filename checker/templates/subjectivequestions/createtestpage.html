@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create test page</title>
+    <script>
+
+        function recalculate(){
+            questions = document.getElementById("table").rows.length - 2;
+            marks = 0;
+            for(var i = 1 ; i<= questions ; i++){
+                var cell = document.getElementById(""+i);
+                marks += parseInt(cell.value);
+            }
+            document.getElementById("totalmarks").innerHTML = ""+marks;
+
+        }
+
+        function addQuestion(){
+            table1 = document.getElementById("table");
+
+            var row_num = table1.rows.length;
+            //document.getElementById("totalmarks").innerHTML = "here";
+
+            var row1 = table1.insertRow(row_num - 1);
+            var cell1 = row1.insertCell(0);
+            cell1.innerHTML = "Question:<input type=\"text\" readonly size=\"3\" value = \""+(row_num-1)+"\" name=\"N"+(row_num-1)+"\">";
+            var cell2 = row1.insertCell(1);
+            cell2.innerHTML = "<textarea rows=\"5\" cols=\"50\" name=\"Q"+(row_num-1)+"\"></textarea>";
+            var cell3 = row1.insertCell(2);
+            cell3.innerHTML = "Marks:";
+            var cell4 = row1.insertCell(3);
+            cell4.innerHTML = "<input type=\"text\" onchange=\"recalculate()\" id = \""+(row_num-1)+"\" name=\"M"+(row_num-1)+"\">";
+        }
+    </script>
+</head>
+<body>
+<h1>{{ context }}</h1>
+<hr>
+<form method="post" action="/teacher/subjective/{{ index }}/create/{{ context }}/add/">
+    {% csrf_token %}
+    <table id="table">
+        <tr><th colspan="2">Total marks</th><td colspan="2" id="totalmarks">0</td></tr>
+        <tr>
+            <td><input type="button" onclick="addQuestion()" value="Add Question" ></td>
+            <td><input type="submit" value="SUBMIT" ></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

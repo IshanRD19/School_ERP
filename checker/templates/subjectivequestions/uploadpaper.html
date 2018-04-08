@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload paper</title>
+</head>
+<body>
+<h1>Upload paper</h1>
+<hr>
+<table>
+    <tr><th>Roll Number</th><th>Name</th><th>Upload File</th></tr>
+{% for i, j in context %}
+    <tr>
+        <td>{{ i.RollNo }}</td>
+        <td>{{ i.Index.FirstName }}</td>
+        <td>
+            {% if not j %}
+            <form name = "f{{ i.RollNo }}" method ="post" enctype="multipart/form-data" action="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ paperid }}/upload/{{ i.RegistrationNo }}/submit">
+                {% csrf_token %}
+                <input type="file" name="{{ i.RegistrationNo }}"><input type="submit" value="submit">
+            </form>
+            {% else %}
+            <p style="color:green;">Uploaded
+                <a href="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ paperid }}/upload/{{ i.RegistrationNo }}/viewupload">View </a>
+                <a href="/teacher/subjective/{{ index }}/viewtest/{{ class_section }}/{{ paperid }}/upload/{{ i.RegistrationNo }}/check">Check </a>
+            </p>
+            {% endif %}
+
+        </td>
+    </tr>
+
+{% endfor %}
+</table>
+</body>
+</html>

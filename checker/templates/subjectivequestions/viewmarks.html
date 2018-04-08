@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPaper</title>
+</head>
+<body>
+<h1>Question Paper</h1>
+<hr>
+<table width="80%">
+{% for i in context %}
+    <tr><th>{{ i.of_question.question_number }}</th><td>{{ i.of_question.statement }}</td><td>{{ i.number }}/{{ i.of_question.total_marks }}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
