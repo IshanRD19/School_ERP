@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SchoolERP/settings.py" afterPath="$PROJECT_DIR$/SchoolERP/settings.py" />
-      <change beforePath="$PROJECT_DIR$/SchoolERP/urls.py" afterPath="$PROJECT_DIR$/SchoolERP/urls.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" afterPath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
-      <change beforePath="$PROJECT_DIR$/teacher/urls.py" afterPath="$PROJECT_DIR$/teacher/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -616,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523197563690</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Integerated All Modules">
+      <created>1523206575700</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1523206575700</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -690,7 +692,8 @@
     <MESSAGE value="Minor updates on teacher panel" />
     <MESSAGE value="fixed teacher panel" />
     <MESSAGE value="Integerated multiple choice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integerated multiple choice" />
+    <MESSAGE value="Integerated All Modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integerated All Modules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
