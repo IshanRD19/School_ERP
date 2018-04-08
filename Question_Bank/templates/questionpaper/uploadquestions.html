@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Questions</title>
+</head>
+<body>
+<form action="/teacher/multiplechoice/{{ index }}/createtest/uploadquestions/submit/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        <tr><th>Upload CSV</th><td><input type="file" name="ques"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+
+    </table>
+</form>
+
+</body>
+</html>

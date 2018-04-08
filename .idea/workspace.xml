@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/urls.py" />
+    <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="Integerated multiple choice">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/admin.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/apps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0001_initial.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0002_auto_20180407_0955.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/0003_auto_20180408_1400.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/migrations/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/models.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/allquestionsforedit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/attempttest.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/createquestionpaper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/createtest.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/editquestion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/editquestionpaper.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/home.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/logs.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/questionpapersforedit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/taketesthome.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/testresults.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/templates/questionpaper/uploadquestions.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/tests.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Question_Bank/views.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SchoolERP/settings.py" afterPath="$PROJECT_DIR$/SchoolERP/settings.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/student/templates/studenthome.html" afterPath="$PROJECT_DIR$/student/templates/studenthome.html" />
-      <change beforePath="$PROJECT_DIR$/student/urls.py" afterPath="$PROJECT_DIR$/student/urls.py" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" afterPath="$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html" />
-      <change beforePath="$PROJECT_DIR$/teacher/urls.py" afterPath="$PROJECT_DIR$/teacher/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -583,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523081308700</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Integerated multiple choice">
+      <created>1523197449593</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1523197449593</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -656,7 +678,8 @@
     <MESSAGE value="Grading for Assignments" />
     <MESSAGE value="Minor updates on teacher panel" />
     <MESSAGE value="fixed teacher panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed teacher panel" />
+    <MESSAGE value="Integerated multiple choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integerated multiple choice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

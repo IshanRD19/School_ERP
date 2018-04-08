@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Question Paper</title>
+</head>
+<body>
+<h1>Edit Question Paper</h1><hr>
+<form method="post" action="/teacher/multiplechoice/{{ index }}/createtest/editquestionpaper/{{ question_paper.id }}/edit/">
+    {% csrf_token %}
+<table cellpadding="10">
+    <tr>
+        <th>Question Paper</th>
+        <td><input type="text" name="qpname" value="{{ question_paper.qpName }}"></td>
+    </tr>
+    <tr>
+        <th>Active</th>
+        {% if question_paper.activeFlag %}
+            <td><input type="checkbox" name="active" checked></td>
+        {% else %}
+            <td><input type="checkbox" name="active"></td>
+        {% endif %}
+    </tr>
+    <tr><td><input type="submit" value="Submit"></td></tr>
+</table>
+<table cellpadding="10">
+    <tr><th>Select</th><th>Question</th><th>Subject</th><th>Sub-category</th><th>Marks</th><th>Time Limit</th></tr>
+{% for i in questions %}
+    <tr>
+        <td>
+            {% if i not in question_paper.questions.all %}
+            <input type="checkbox" name="{{ i.id }}">
+            {% else %}
+            <input type="checkbox" name="{{ i.id }}" checked>
+            {% endif %}
+
+        </td>
+        <td>{{ i.statement }}</td>
+        <td>{{ i.subject }}</td>
+        <td>{{ i.subCategory }}</td>
+        <td>{{ i.maxMarks }}</td>
+        <td>{{ i.timeLimit }}</td>
+    </tr>
+{% endfor %}
+</table>
+</form>
+
+</body>
+</html>

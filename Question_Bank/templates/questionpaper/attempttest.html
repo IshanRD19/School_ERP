@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attempt the Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Ready. Set. Go!</h1><br>
+
+<form method="post" action="/student/multiplechoice/{{ index }}/{{ context.id }}/{{ session.id }}/testresult/">
+    {% csrf_token %}
+    <!--Deprecated code written by ishan-->
+    <!--{% for i in context.questions.all %}-->
+        <!--<h3>{{ i.statement }}</h3>-->
+        <!--<input type="radio" name=""> {{ i.option1 }}<br><br>-->
+        <!--<input type="radio" name="radAns{{i}}"> {{ i.option2 }}<br><br>-->
+        <!--<input type="radio" name="radAns{{i}}"> {{ i.option3 }}<br><br>-->
+        <!--<input type="radio" name="radAns{{i}}"> {{ i.option4 }}<br><br>-->
+    <!--{% endfor %}-->
+    {% for i, j in iterations %}
+        <button type="button" onclick="gotoDiv({{ i }})" id="{{ j.id }}">{{ i }}</button>
+    {% endfor %}
+    <div align="left">
+        <button onclick="plusDivs(-1)" type="button" class="but">&#10094;</button>
+        <button onclick="plusDivs(1)" type="button" class="but">&#10095;</button>
+    </div>
+    <!--<div id="res"></div>-->
+
+
+    {% for i in context.questions.all %}
+            <div class="mySlides">
+                <p>{{ i.statement }}</p>
+                <input type="radio" name="{{ i.id }}" value="1"> {{ i.option1 }}
+                <input type="radio" name="{{ i.id }}" value="2"> {{ i.option2 }}
+                <input type="radio" name="{{ i.id }}" value="3"> {{ i.option3 }}
+                <input type="radio" name="{{ i.id }}" value="4"> {{ i.option4 }}
+            </div>
+    {% endfor %}
+    <br><input type="submit" value="Submit Test">
+</form>
+<script>
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    //var review = new array();
+
+    function plusDivs(n) {
+        $.get("/student/multiplechoice/{{ index }}/taketest/{{ context.id }}/createlog", {id: slideIndex, session: {{ session.id }}}, function(data){
+        });
+        slideIndex += n;
+        showDivs(slideIndex);
+    }
+
+    function gotoDiv(n){
+        $.get("/student/multiplechoice/{{ index }}/taketest/{{ context.id }}/createlog", {id: slideIndex, session: {{ session.id }}}, function(data){
+        });
+        slideIndex = n;
+        showDivs(slideIndex);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "inline";
+    }
+
+    $("button").click(function(e) {
+        {% for i in context.questions.all %}
+                flag = true;
+                for (j = 0; j < document.getElementsByName('{{ i.id }}').length; j++) {
+                    if (document.getElementsByName('{{ i.id }}')[j].checked) {
+                        document.getElementById('{{ i.id }}').style.backgroundColor = "#00FF00";
+                        flag = false;
+                    }
+                    if(flag)
+                        document.getElementById('{{ i.id }}').style.backgroundColor = "#FFFFFF";
+
+
+
+                }
+
+        {% endfor %}
+
+    });
+
+
+</script>
+</body>
+</html>

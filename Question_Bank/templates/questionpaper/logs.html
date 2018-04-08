@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs</title>
+</head>
+<body>
+<h1>Logs</h1><br>
+<table cellpadding="20">
+    <tr><th>S. No.</th><th>Question Paper</th><th>From Time</th><th>Till Time</th><th>Response</th></tr>
+    {% for i in context %}
+        <tr>
+            <td>{{ i.recordID }}</td>
+            <td>{{ i.questionID }}</td>
+            <td>{{ i.fromTime }}</td>
+            <td>{{ i.tillTime }}</td>
+            <td>{{ i.response }}</td>
+        </tr>
+{% endfor %}
+</table>
+</body>
+</html>
