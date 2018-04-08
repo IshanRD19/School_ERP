@@ -16,6 +16,20 @@ def home(request, index):
     return render(request, 'teacherhome/teacherhome.html', {'context': user, 'classes': subject_teacher, "subjects": timetable})
 
 
+def view_profile(request, index):
+    user = Personal_Info.objects.get(Index=index)
+    teacher_id = Teachers.objects.get(Index=user)
+    return render(request, 'teacherhome/viewprofile.html', {'context': user})
+
+
+def messages(request, index):
+    return render(request, 'teacherhome/messageinbox.html')
+
+
+def view_timetable(request, index):
+    return render(request, 'teacherhome/viewtimetable.html')
+
+
 def assignment(request, index, sub):
     user = Personal_Info.objects.get(Index=index)
     teacher_id = Teachers.objects.get(Index=user)

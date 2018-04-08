@@ -17,9 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
 
-
 urlpatterns = [
     url(r'^home/(?P<index>[0-9]+)$', views.home),
+    url(r'^(?P<index>[0-9]+)/profile/', views.view_profile),
+    url(r'^(?P<index>[0-9]+)/messages/', views.messages),
+    url(r'^(?P<index>[0-9]+)/timetable/', views.view_timetable),
     url(r'^multiplechoice/(?P<index>[0-9]+)/', include('Question_Bank.urls')),
     url(r'^subjective/(?P<index>[0-9]+)/', include('checker.urls')),
     url(r'^assignment/(?P<index>[0-9]+)/(?P<sub>[0-9]+)$', views.assignment),
