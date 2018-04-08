@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1c7e959-a714-4444-b6fe-76139d786e1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,9 +33,9 @@
               <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <element signature="e#1776#2086#0" expanded="false" />
-                <element signature="e#2783#3023#0" expanded="false" />
-                <element signature="e#3068#3257#0" expanded="false" />
+                <element signature="e#1798#2108#0" expanded="false" />
+                <element signature="e#2805#3045#0" expanded="false" />
+                <element signature="e#3090#3279#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/checker/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+              <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -53,8 +54,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checker/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="198" column="72" lean-forward="true" selection-start-line="198" selection-start-column="72" selection-end-line="198" selection-end-column="72" />
+            <state relative-caret-position="225">
+              <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -76,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/uploadpaper.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
+              <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -110,12 +111,12 @@
         <entry file="file://$PROJECT_DIR$/teacher/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="729">
-              <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="66" />
+              <caret line="71" column="66" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="66" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#3473#4054#0" expanded="false" />
-                <element signature="e#4102#4277#0" expanded="false" />
-                <element signature="e#4323#4467#0" expanded="false" />
+                <element signature="e#3878#4459#0" expanded="false" />
+                <element signature="e#4507#4682#0" expanded="false" />
+                <element signature="e#4728#4872#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -310,38 +311,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SchoolERP/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SchoolERP/__pycache__/settings.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SchoolERP/__pycache__/urls.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SchoolERP/__pycache__/wsgi.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/__pycache__/admin.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/__pycache__/models.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/__pycache__/urls.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/__pycache__/views.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/common/migrations/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/__pycache__/admin.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/__pycache__/models.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/migrations/__pycache__/0001_initial.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/migrations/__pycache__/0002_auto_20180407_0223.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/principal/migrations/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/__pycache__/admin.cpython-36.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/student/__pycache__/models.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/__pycache__/urls.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/__pycache__/views.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/migrations/__pycache__/0001_initial.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/migrations/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/__pycache__/__init__.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/__pycache__/admin.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/__pycache__/models.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/models.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/__pycache__/urls.cpython-36.pyc</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/__pycache__/views.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/migrations/__pycache__/0001_initial.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/migrations/__pycache__/0002_remove_classes_classpicture.cpython-36.pyc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/migrations/__pycache__/__init__.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/templates/teacherhome/teacherhome.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/urls.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/views.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -350,6 +325,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/migrations/0002_auto_20180407_1303.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/student/migrations/__pycache__/0002_auto_20180407_1303.cpython-36.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/templates/teacherhome/messageinbox.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/templates/teacherhome/viewprofile.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/teacher/templates/teacherhome/viewtimetable.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -632,7 +612,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15562174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -641,16 +620,26 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2990196" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2990196" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2990196" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15562174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -981,7 +970,7 @@
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -989,12 +978,12 @@
     <entry file="file://$PROJECT_DIR$/teacher/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
-          <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="66" />
+          <caret line="71" column="66" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="66" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#3473#4054#0" expanded="false" />
-            <element signature="e#4102#4277#0" expanded="false" />
-            <element signature="e#4323#4467#0" expanded="false" />
+            <element signature="e#3878#4459#0" expanded="false" />
+            <element signature="e#4507#4682#0" expanded="false" />
+            <element signature="e#4728#4872#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,9 +1036,9 @@
           <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#1776#2086#0" expanded="false" />
-            <element signature="e#2783#3023#0" expanded="false" />
-            <element signature="e#3068#3257#0" expanded="false" />
+            <element signature="e#1798#2108#0" expanded="false" />
+            <element signature="e#2805#3045#0" expanded="false" />
+            <element signature="e#3090#3279#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1093,7 +1082,7 @@
     <entry file="file://$PROJECT_DIR$/checker/templates/subjectivequestions/uploadpaper.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
+          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -1109,7 +1098,7 @@
     <entry file="file://$PROJECT_DIR$/checker/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+          <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1132,8 +1121,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/checker/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="198" column="72" lean-forward="true" selection-start-line="198" selection-start-column="72" selection-end-line="198" selection-end-column="72" />
+        <state relative-caret-position="225">
+          <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
