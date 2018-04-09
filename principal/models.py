@@ -93,3 +93,12 @@ class School_Details(models.Model):
     Contact1 = models.CharField(max_length=12)
     Contact2 = models.CharField(max_length=12)
     Contact3 = models.CharField(max_length=12)
+
+
+class Messages(models.Model):
+    Sender = models.ForeignKey(Personal_Info, related_name='messages_sent')
+    Receiver = models.ForeignKey(Personal_Info, related_name='messages_received')
+    DateTime = models.DateTimeField(auto_now=True)
+    Text = models.TextField(max_length=600)
+    #Image = models.ImageField()
+    Status = models.CharField(max_length=10, default='Unread')          # Read or Unread

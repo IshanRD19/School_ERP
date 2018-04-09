@@ -67,3 +67,6 @@ class AssignmentGrades(models.Model):
     Student = models.ForeignKey(Students)
     GradingParameter = models.ForeignKey(AssignmentParameters)
     Grade = models.IntegerField(default=3)
+
+
+

@@ -26,6 +26,10 @@ def view_profile(request, index):
     return render(request, 'teacherhome/viewprofile.html', {'context': user})
 
 
+def view_tasks(request, index):
+    return render(request, 'teacherhome/tasklist.html')
+
+
 def messages(request, index):
     return render(request, 'teacherhome/messageinbox.html')
 

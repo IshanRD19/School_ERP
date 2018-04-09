@@ -89,6 +89,14 @@ class Assigments(models.Model):
         return str(self.id)+"-"+str(self.Subject)
 
 
+class Task_List(models.Model):
+    CreatedOn = models.DateTimeField(auto_now=True)
+    DeadLine = models.DateTimeField(blank=True, null=True)
+    Task_Detail = models.CharField(max_length=100)
+    Priority = models.IntegerField(default=2)         # 1-2-3
+    Completed = models.BooleanField(default=False)
+
+
 
 
 
